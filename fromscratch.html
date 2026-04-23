@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Scratch Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <div class="header">
+    <h1 id="top">My Scratch Page</h1>
+    <p>A page built from scratch with HTML and CSS.</p>
+    <a href="index.html">Back to Resume Page</a>
+  </div>
+
+  <div class="nav-box">
+    <h2>Quick Navigation</h2>
+    <p><a href="#hobbies">Jump to Hobbies</a></p>
+    <p><a href="#video">Jump to Video</a></p>
+    <p><a href="#tableau">Jump to Tableau Graph</a></p>
+  </div>
+
+  <div class="content-box">
+    <h2>About This Page</h2>
+    <p>
+      This page is about my interests and includes lists, an image, a YouTube video,
+      an on-page anchor, custom CSS styling, and a live Tableau visualization.
+    </p>
+  </div>
+
+  <div class="content-box" id="hobbies">
+    <h2>My Favorite Hobbies</h2>
+    <ol>
+      <li>Fitness
+        <ul>
+          <li>Weightlifting</li>
+          <li>Walking</li>
+          <li>Improving nutrition</li>
+        </ul>
+      </li>
+      <li>Cars
+        <ul>
+          <li>Researching reliable used cars</li>
+          <li>Learning about maintenance</li>
+        </ul>
+      </li>
+      <li>Web Development
+        <ul>
+          <li>Learning HTML</li>
+          <li>Learning CSS</li>
+          <li>Building webpages</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="content-box">
+    <h2>Image</h2>
+    <img
+      src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+      alt="Mountain landscape"
+      width="500"
+    />
+    <p>This image is not from a Bootstrap theme.</p>
+  </div>
+
+  <div class="content-box" id="video">
+    <h2>YouTube Video</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="content-box" id="tableau">
+    <h2>Interactive Tableau Graph</h2>
+
+    <div class='tableauPlaceholder' id='viz1680000000000' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Tableau Visualization'
+            src='https://public.tableau.com/static/images/RM/RM5K7PXYN/1_rss.png'
+            style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared/RM5K7PXYN' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https://public.tableau.com/static/images/RM/RM5K7PXYN/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+      </object>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1680000000000');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '600px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <div class="footer">
+    <p><a href="#top">Back to Top</a></p>
+    <p><a href="index.html">Return to Professional Resume Page</a></p>
+  </div>
+
+</body>
+</html>
